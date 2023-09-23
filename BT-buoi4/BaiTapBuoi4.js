@@ -40,7 +40,8 @@ console.log("Giá trị e là: string");
 //console.log(c, d, e);
 
 // bai 7
-// x = 1/0 là vô cực Infinity
+// x = 1/0 là vô cực (Infinity)
 const x = 1 / 0;
 
-console.log(x === x + 1);
+//console.log(x === x + 1);
+console.log("Giá trị x sẽ là: Infinity")
