@@ -21,11 +21,10 @@ let lopAppK16 = {
 };
 console.log(lopAppK16);
 
-//Bài 3:
+//Bài 4:
 function daysUntilFutureDate(futureDate) {
   const ngayHienTai = new Date();
-  const ngayTuongLai = new Date(futureDate);
-  return ngayTuongLai.getDate() - ngayHienTai.getDate();
+  return futureDate.getDate() - ngayHienTai.getDate();
 }
 let targetDate = new Date("2023-09-27");
 //console.log(daysUntilFutureDate(targetDate));
