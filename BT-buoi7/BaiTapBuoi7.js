@@ -24,12 +24,27 @@ function f2() {
 // Con lại sẽ bị báo lỗi vì biến age1 chưa đc khai báo
 
 //Bài 3:
-function kiemTraVietHoa(chuoi) {
+/**function kiemTraVietHoa(chuoi) {
     if(typeof chuoi == 'string'){
         if(chuoi == chuoi.toUpperCase()){
             return "Chuỗi có viết hoa";
         }else{return "Chuỗi không có viết hoa"};
     }else{return "Đây không phải là chuỗi"};
+}*/
+
+function kiemTraVietHoa(chuoi) {
+    let hasUpperCase = false;
+    for (char of chuoi){
+        console.log('lap qua, char')
+        if(char /= char.toLowerCase())
+        hasUpperCase = true;
+        break;
+    }
+    /**if(typeof chuoi == 'string'){
+        if(chuoi == chuoi.toUpperCase()){
+            return "Chuỗi có viết hoa";
+        }else{return "Chuỗi không có viết hoa"};
+    }else{return "Đây không phải là chuỗi"};*/
 }
 console.log(kiemTraVietHoa("a"))
 console.log(kiemTraVietHoa("A"))
